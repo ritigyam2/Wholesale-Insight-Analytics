@@ -39,4 +39,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Authors
 
-* [Abdullah Al Mahdi](https://github.com/Mahdi-Abdullah)
+* [Ritigya Mishra](https://github.com/ritigyam2)
