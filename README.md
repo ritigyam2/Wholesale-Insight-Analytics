@@ -1,42 +1,47 @@
 # Wholesale Insight Analytics
 
-This project demonstrates how to perform Wholesale Insight Analytics using machine learning. Wholesale Insight Analytics is the process of dividing customers into groups based on common characteristics so that companies can market to each group effectively and appropriately. In this project, we use KMeans clustering and Principal Component Analysis (PCA) to perform Wholesale Insight Analytics based on purchasing behavior.
+A notebook-based customer segmentation project using wholesale purchasing data. It explores customer spending patterns and applies K-Means clustering and Principal Component Analysis (PCA) to examine groups with similar purchasing behaviour.
 
-## Getting Started
+## Repository Contents
 
-### Prerequisites
+- `Wholesale Insight Analytics.ipynb` — data exploration, preprocessing, clustering, and visual analysis
+- `wholesale_customers.csv` — dataset used by the notebook
 
-To run this project, you need to have Python 3 installed on your system along with the following libraries:
+## Requirements
+
+Python 3 and the following packages:
 
 - pandas
-- numpy
-- matplotlib
-- seaborn
+- NumPy
+- Matplotlib
+- Seaborn
 - scikit-learn
+- Jupyter Notebook
 
-### Installation
+Install the dependencies:
 
-You can install the required libraries using pip. Open a command prompt or terminal and run the following command:
+```bash
+python -m pip install pandas numpy matplotlib seaborn scikit-learn notebook
+```
 
+## Run the Notebook
 
-### Usage
+Clone the repository and move into its directory:
 
-To use this project, follow these steps:
+```bash
+git clone https://github.com/ritigyam2/Wholesale-Insight-Analytics.git
+cd Wholesale-Insight-Analytics
+jupyter notebook "Wholesale Insight Analytics.ipynb"
+```
 
-1. Clone the repository to your local machine.
+Run the notebook cells in order. Keep `wholesale_customers.csv` in the repository root so the notebook can load the dataset.
 
-2. Open a command prompt or terminal and navigate to the project directory.
+## Method
 
-3. Run the following command to start the Jupyter notebook:
+The analysis uses exploratory data analysis to understand spending distributions, then applies K-Means to group customers. PCA is used to project the feature space for visual inspection.
 
-4. Open the `Wholesale Insight Analytics.ipynb` file in the Jupyter notebook.
+Clustering results depend on preprocessing choices, scaling, and the selected number of clusters; the resulting groups should be interpreted as exploratory segments rather than fixed customer categories.
 
-5. Follow the instructions in the notebook to perform Wholesale Insight Analytics.
+## License
 
-### License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Authors
-
-* [Ritigya Mishra](https://github.com/ritigyam2)
+See [LICENSE](LICENSE).
